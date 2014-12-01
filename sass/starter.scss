@@ -1,0 +1,432 @@
+@import "compass";
+
+*:before,
+*:after  {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@import "screen";
+
+ input[type="search"] {
+ -webkit-appearance: textfield; 
+ -moz-box-sizing: content-box;
+ -webkit-box-sizing: content-box;
+ box-sizing: content-box;
+ }
+.container{
+    width: 1200px;
+    margin:0px auto;
+    max-width: 90%;
+}
+blockquote,q{
+    quotes:none;
+}
+blockquote:before,blockquote:after,
+q:before,q:after{
+    content:’’;
+    content:none;
+}
+
+:focus{
+    outline:0;
+} 
+
+ins{
+    text-decoration:none;
+}
+del{
+    text-decoration:line-through;
+}
+
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+img {
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+html {
+  font-size: 62.5%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.4em;
+  line-height: 1.5;
+}
+
+/* font-sizing for content */
+
+p,
+.p-like,
+ul,
+ol,
+dl,
+blockquote,
+pre,
+td,
+th,
+label,
+textarea,
+caption,
+details,
+figure,
+hgroup {
+  margin-top: 0.75em;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+h1,h2,h3,h4,h5,h6{
+    line-height: 2em;
+}
+
+h1,
+.h1 {
+  font-size: 3.2rem;
+}
+
+h2,
+.h2 {
+  font-size: 2.8rem;
+}
+
+h3,
+.h3 {
+  font-size: 2.4rem;
+}
+
+h4,
+.h4 {
+  font-size: 2rem;
+}
+
+h5,
+.h5 {
+  font-size: 1.8rem;
+}
+
+h6,
+.h6 {
+  font-size: 1.6rem;
+}
+
+/* alternate font-sizing */
+
+.smaller {
+  font-size: 0.71em;
+}
+
+.small {
+  font-size: 0.86em;
+}
+
+.big {
+  font-size: 1.14em;
+}
+
+.bigger {
+  font-size: 1.29em;
+}
+
+.biggest {
+  font-size: 1.43em;
+}
+
+code,
+pre,
+samp,
+kbd {
+  white-space: pre-line;
+  /* IE fix */
+  white-space: pre-wrap;
+  font-family: Consolas, 'DejaVu Sans Mono', Courier, monospace;
+  line-height: normal;
+}
+
+em,
+.italics,
+address,
+cite,
+dfn,
+i,
+var {
+  font-style: italic;
+}
+
+.normal {
+  font-style: normal;
+}
+
+strong,
+.bold {
+  font-weight: bold;
+}
+
+small,
+sub,
+sup {
+  font-size: smaller;
+}
+p:first-child,
+ul:first-child,
+ol:first-child,
+dl:first-child,
+blockquote:first-child,
+pre:first-child,
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+  margin-top: 0;
+}
+
+/* avoid margins on nested elements */
+
+li p,
+li ul,
+li ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* max values */
+
+img,
+table,
+td,
+blockquote,
+code,
+pre,
+textarea,
+input,
+video {
+  max-width: 100%;
+  @include box-sizing(border-box);
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+/*
+    Margin & Padding Helper  
+    source https://github.com/stubbornella/oocss/blob/master/core/spacing/space.css
+    p,m = padding,margin
+    a,t,r,b,l = all,top,right,bottom,left
+    s,m,l,n,0 = small(10px),medium(20px),large(30px), zero or none(0)
+*/
+
+.man {
+  margin: 0;
+}
+
+.mas {
+  margin: 1em;
+}
+
+.mam {
+  margin: 2em;
+}
+
+.mal {
+  margin: 4em;
+}
+
+.pan {
+  padding: 0;
+}
+
+.pas {
+  padding: 1em;
+}
+
+.pam {
+  padding: 2em;
+}
+
+.pal {
+  padding: 4em;
+}
+
+.mtn {
+  margin-top: 0;
+}
+
+.mts {
+  margin-top: 1em;
+}
+
+.mtm {
+  margin-top: 2em;
+}
+
+.mtl {
+  margin-top: 4em;
+}
+
+.mrn {
+  margin-right: 0;
+}
+
+.mrs {
+  margin-right: 1em;
+}
+
+.mrm {
+  margin-right: 2em;
+}
+
+.mrl {
+  margin-right: 4em;
+}
+
+.mbn {
+  margin-bottom: 0;
+}
+
+.mbs {
+  margin-bottom: 1em;
+}
+
+.mbm {
+  margin-bottom: 2em;
+}
+
+.mbl {
+  margin-bottom: 4em;
+}
+
+.mln {
+  margin-left: 0;
+}
+
+.mls {
+  margin-left: 1em;
+}
+
+.mlm {
+  margin-left: 2em;
+}
+
+.mll {
+  margin-left: 4em;
+}
+
+.ptn {
+  padding-top: 0;
+}
+
+.pts {
+  padding-top: 1em;
+}
+
+.ptm {
+  padding-top: 2em;
+}
+
+.ptl {
+  padding-top: 4em;
+}
+
+.prn {
+  padding-right: 0;
+}
+
+.prs {
+  padding-right: 1em;
+}
+
+.prm {
+  padding-right: 2em;
+}
+
+.prl {
+  padding-right: 4em;
+}
+
+.pbn {
+  padding-bottom: 0;
+}
+
+.pbs {
+  padding-bottom: 1em;
+}
+
+.pbm {
+  padding-bottom: 2em;
+}
+
+.pbl {
+  padding-bottom: 4em;
+}
+
+.pln {
+  padding-left: 0;
+}
+
+.pls {
+  padding-left: 1em;
+}
+
+.plm {
+  padding-left: 2em;
+}
+
+.pll {
+  padding-left: 4em;
+}
+
+.form{
+    font-size: 1.2em;
+    .form_text{
+        letter-spacing: .04em;
+        padding: .3em .7em;
+        width:100%;
+    }    
+
+    .form-g{
+        padding:.5em .5em;
+    }
+    .form_textarea{
+        padding:10px 20px;
+        width:100%;
+        resize:vertical;
+        height:120px;
+        line-height:1.5em;
+    }
+}
