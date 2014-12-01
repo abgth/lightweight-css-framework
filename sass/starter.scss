@@ -24,7 +24,7 @@
 .container{
     width: 1200px;
     margin:0px auto;
-    max-width: 90%;
+    max-width: 96%;
 }
 blockquote,q{
     quotes:none;
@@ -294,11 +294,14 @@ a.btn{
 
 }
 .btn-lg{
+  font-size: 16 px;
   padding:13px 22px;
 }
 .btn-md{
   padding:10px 18px;
+  font-size: 14px;
 }
 .btn-sm{
   padding:7px 15px;
+  font-size: 12px;
 }
