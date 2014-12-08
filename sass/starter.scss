@@ -243,13 +243,6 @@ video {
 .center {
   text-align: center;
 }
-/*
-    Margin & Padding Helper  
-    source https://github.com/stubbornella/oocss/blob/master/core/spacing/space.css
-    p,m = padding,margin
-    a,t,r,b,l = all,top,right,bottom,left
-    s,m,l,n,0 = small(10px),medium(20px),large(30px), zero or none(0)
-*/
 
 .man {
   margin: 0;
@@ -258,8 +251,6 @@ video {
 .pan {
   padding: 0;
 }
-
-
 
 .form{
     font-size: 1.2em;
