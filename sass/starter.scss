@@ -263,6 +263,12 @@ video {
 
 .form{
     font-size: 1.2em;
+    &.inline{
+      display:block-inline;
+      label,input,textarea,select,button{
+        display:block-inline;
+      }
+    }
     .form_text{
         letter-spacing: .04em;
         padding: .3em .7em;
@@ -280,6 +286,7 @@ video {
         line-height:1.5em;
     }
 }
+
 a.btn{
   text-decoration:none;
 }
@@ -305,3 +312,5 @@ a.btn{
   padding:7px 15px;
   font-size: 12px;
 }
+
+
