@@ -1,5 +1,7 @@
 @import "compass";
 
+@import "screen";
+
 *:before,
 *:after  {
   -webkit-box-sizing: border-box;
@@ -12,8 +14,6 @@
   display: table;
   clear: both;
 }
-
-@import "screen";
 
  input[type="search"] {
  -webkit-appearance: textfield; 
