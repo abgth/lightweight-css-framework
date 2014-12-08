@@ -269,18 +269,25 @@ video {
 
 .form {
   font-size: 1.2em; }
-  .form .form_text {
-    letter-spacing: .04em;
-    padding: .3em .7em;
-    width: 100%; }
-  .form .form-g {
-    padding: .5em .5em; }
-  .form .form_textarea {
-    padding: 10px 20px;
-    width: 100%;
-    resize: vertical;
-    height: 120px;
-    line-height: 1.5em; }
+  .form.inline {
+    display: block-inline; }
+    .form.inline label, .form.inline input, .form.inline textarea, .form.inline select, .form.inline button {
+      display: block-inline; }
+
+.form_text {
+  letter-spacing: .04em;
+  padding: .3em .7em;
+  width: 100%; }
+
+.form-g {
+  padding: .5em .5em; }
+
+.form_textarea {
+  padding: 10px 20px;
+  width: 100%;
+  resize: vertical;
+  height: 120px;
+  line-height: 1.5em; }
 
 a.btn {
   text-decoration: none; }
