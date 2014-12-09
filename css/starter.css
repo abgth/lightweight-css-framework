@@ -62,6 +62,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   box-sizing: border-box;
 }
 
+ul, ol {
+  list-style: inherit;
+  float: left;
+  text-align: left;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+li {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .clearfix:after {
   content: "";
   display: table;
@@ -353,16 +368,105 @@ a.btn {
 }
 
 .btn-lg {
-  font-size: 16 px;
+  font-size: 1.4em;
   padding: 13px 22px;
 }
 
 .btn-md {
   padding: 10px 18px;
-  font-size: 14px;
+  font-size: 1.2em;
 }
 
 .btn-sm {
   padding: 7px 15px;
-  font-size: 12px;
+  font-size: 1em;
+}
+
+[class*='col-'] {
+  float: left;
+  min-height: 1px;
+  width: 16.66%;
+}
+
+.col-1 {
+  width: 16.66%;
+}
+
+.col-2 {
+  width: 33.33%;
+}
+
+.col-3 {
+  width: 50%;
+}
+
+.col-4 {
+  width: 66.664%;
+}
+
+.col-5 {
+  width: 83.33%;
+}
+
+.col-6 {
+  width: 100%;
+}
+
+@media all and (max-width: 800px) {
+  .col-1 {
+    width: 33.33%;
+  }
+
+  .col-2 {
+    width: 50%;
+  }
+
+  .col-3 {
+    width: 83.33%;
+  }
+
+  .col-4 {
+    width: 100%;
+  }
+
+  .col-5 {
+    width: 100%;
+  }
+
+  .col-6 {
+    width: 100%;
+  }
+
+  .row .col-2:last-of-type {
+    width: 100%;
+  }
+
+  .row .col-5 ~ .col-1 {
+    width: 100%;
+  }
+}
+@media all and (max-width: 650px) {
+  .col-1 {
+    width: 50%;
+  }
+
+  .col-2 {
+    width: 100%;
+  }
+
+  .col-3 {
+    width: 100%;
+  }
+
+  .col-4 {
+    width: 100%;
+  }
+
+  .col-5 {
+    width: 100%;
+  }
+
+  .col-6 {
+    width: 100%;
+  }
 }
