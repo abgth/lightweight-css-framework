@@ -110,7 +110,8 @@ figure,
 hgroup {
   margin-top: 0.75em;
   margin-bottom: 0;
-  line-height: 1.5;
+  line-height: 1.5em;
+  font-size:1.2em;
 }
 h1,h2,h3,h4,h5,h6{
     line-height: 2em;
@@ -254,6 +255,10 @@ video {
   text-align: center;
 }
 
+.justify {
+  text-align: justify;
+}
+
 .man {
   margin: 0;
 }
@@ -281,11 +286,11 @@ video {
         padding:.5em .5em;
     }
     .form_textarea{
-        padding:10px 20px;
+        padding:10px 10px;
         width:100%;
         resize:vertical;
         height:120px;
-        line-height:1.5em;
+        line-height:1.7em;
     }
 
 
@@ -314,6 +319,90 @@ a.btn{
     font-size: 1em;
   }
 
+.text-info-formating{
+  padding:5px 10px;
+  display:inline-block;
+}
+
+.info{
+  @extend .text-info-formating;
+  color:hsl(200,100%,50%);
+}
+.info-bg{
+  @extend .text-info-formating;
+  background-color:hsl(200,100%,50%);  
+  color:hsl(200,100%,98%);
+}
+.btn-info{
+  border-color:hsl(200,100%,50%); 
+  color:hsl(200,100%,50%); 
+}
+.btn-info-bg{
+  border-color:hsl(200,100%,50%); 
+  background-color:hsl(200,100%,50%); 
+  color:hsl(200,100%,98%); 
+}
+.success{
+  @extend .text-info-formating;
+  color:hsl(140,70%,50%);
+}
+.success-bg{
+  @extend .text-info-formating;
+  color:hsl(140,80%,98%);
+  background-color:hsl(140,50%,50%);
+}
+.btn-success{
+  border-color:hsl(140,50%,50%);
+  color:hsl(140,50%,50%);
+}
+.btn-success-bg{
+  border-color:hsl(140,50%,50%); 
+  background-color:hsl(140,50%,50%);
+  color:hsl(140,100%,99%);
+}
+
+.error{
+  @extend .text-info-formating;
+  color:hsl(0,100%,70%);
+  
+}
+.error-bg{
+  @extend .text-info-formating;
+  color:hsl(0,100%,98%);
+  background-color:hsl(0,100%,70%);
+}
+.btn-error{
+  border-color:hsl(0,100%,70%);
+  color:hsl(0,100%,70%);
+}
+.btn-error-bg{
+  border-color:hsl(0,100%,70%);
+  background-color:hsl(0,100%,70%);
+  color:hsl(0,100%,99%);
+}
+
+.warning{
+  @extend .text-info-formating;
+  color:hsl(50,80%,50%);
+  
+}
+.warning-bg{
+  @extend .text-info-formating;
+  color:hsl(50,80%,98%);
+  background-color:hsl(50,80%,50%);
+}
+.btn-warning{
+  border-color:hsl(50,80%,50%);
+  color:hsl(50,80%,50%);
+}
+.btn-warning-bg{
+  border-color:hsl(50,80%,50%);
+  background-color:hsl(50,80%,50%);
+  color:hsl(50,80%,98%);
+}
+.form-i{
+  display:inline-block;
+}
 [class*='col-'] {
     float: left;
     min-height: 1px; 
@@ -337,6 +426,10 @@ a.btn{
 .col-6{
     width: 100%;
 }
+.block{
+  padding:2% 2%;
+}
+
 @media all and (max-width:800px){
     .col-1{ width: 33.33%;  }
     .col-2{ width: 50%;     }
